@@ -11,6 +11,7 @@ import PostCard from "@/components/posts/PostCard";
 import SearchBar from "@/components/utils/SearchBar";
 import SlowConnectionNotice from "@/components/utils/SlowConnectionNotice";
 import ThemeToggle from "@/components/utils/ThemeToggle";
+import ScrollToTopButton from "@/components/utils/ScrollToTopButton";
 
 export default function PostsPage() {
   const [filter, setFilter] = useState<string>("");
@@ -81,6 +82,7 @@ export default function PostsPage() {
             posts?.map((post) => <PostCard key={post.id} post={post} />)}
         </section>
       </div>
+      <ScrollToTopButton />
       <SlowConnectionNotice visible={isSlow} />
     </main>
   );

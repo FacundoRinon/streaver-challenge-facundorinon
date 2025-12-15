@@ -11,14 +11,14 @@ export default function ThemeToggle() {
       onClick={toggleTheme}
       className="
         p-2 rounded-lg
-        bg-gray-200 dark:bg-gray-800
+        border-3 bg-white dark:bg-zinc-900 border-gray-200 dark:border-gray-700
         text-gray-700 dark:text-gray-200
         hover:opacity-80 transition
         cursor-pointer
       "
       aria-label="Toggle theme"
     >
-      {theme === "light" ? <HiMoon size={20} /> : <HiSun size={20} />}
+      {theme === "light" ? <HiMoon size={30} /> : <HiSun size={30} />}
     </button>
   );
 }

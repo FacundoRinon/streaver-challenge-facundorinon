@@ -48,7 +48,7 @@ export default function PostsPage() {
       <div className="max-w-6xl mx-auto px-4 py-10">
         <header className="mb-5 flex justify-between items-center">
           <h1 className="text-4xl sm:text-5xl font-bold text-gray-900 dark:text-white mb-2">
-            Posts
+            Posts PRUEBA DE PUSH
           </h1>
           <ThemeToggle />
         </header>

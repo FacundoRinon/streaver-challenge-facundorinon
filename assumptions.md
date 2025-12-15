@@ -14,6 +14,8 @@
 
 - In the lib/posts/api.ts file, I left a line with `setTimeout` commented out in order to simulate slow network conditions and facilitate testing of the optional Step 5 functionality.
 
+- After completing the main functionalities, I applied Tailwind CSS utility classes to enhance the visual presentation and ensure the application is fully responsive across different devices.
+
 - Lastly, I found it appropriate to implement a context to allow reading in dark mode. Personally, I find it more comfortable, and that is why I considered it appropriate to add this functionality.
 
 # Suposiciones
@@ -33,3 +35,5 @@
 - En el archivo lib/posts/api.ts, mantuve comentada una línea con `setTimeout` para que sea posible simular condiciones de red lenta y facilitar la prueba de la funcionalidad opcional del Step 5 del desafío.
 
 - Por ultimo, me parecio apropiado implementar un contexto para tener la posibilidad de leer en modo oscuro. En lo personal me queda mas comodo y por eso me parecio apropiado agregar esa funcionalidad.
+
+- Una vez finalizadas las funcionalidades principales, apliqué clases de Tailwind CSS para mejorar la presentación visual y asegurar que la aplicación sea responsiva en distintos dispositivos.

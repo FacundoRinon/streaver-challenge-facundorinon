@@ -45,7 +45,7 @@ export default function PostsPage() {
     <main className="min-h-screen">
       <div className="max-w-6xl mx-auto px-4 py-10">
         <header className="mb-5 flex justify-between items-center">
-          <h1 className="text-5xl font-bold text-gray-900 dark:text-white mb-2">
+          <h1 className="text-4xl sm:text-5xl font-bold text-gray-900 dark:text-white mb-2">
             Posts
           </h1>
           <ThemeToggle />
@@ -58,7 +58,7 @@ export default function PostsPage() {
           />
         </div>
 
-        <section className="grid grid-cols-3 gap-3 min-h-[300px]">
+        <section className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 min-h-[300px]">
           {error && (
             <div className="min-h-screen flex items-center justify-center text-red-500">
               Error al cargar los posts

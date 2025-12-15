@@ -10,6 +10,7 @@ import SectionLoader from "@/components/utils/SectionLoader";
 import PostCard from "@/components/posts/PostCard";
 import SearchBar from "@/components/utils/SearchBar";
 import SlowConnectionNotice from "@/components/utils/SlowConnectionNotice";
+import ThemeToggle from "@/components/utils/ThemeToggle";
 
 export default function PostsPage() {
   const [filter, setFilter] = useState<string>("");
@@ -41,15 +42,18 @@ export default function PostsPage() {
   }, [data]);
 
   return (
-    <main className="min-h-screen bg-gray-50">
+    <main className="min-h-screen">
       <div className="max-w-6xl mx-auto px-4 py-10">
-        <header className="mb-5">
-          <h1 className="text-5xl font-bold text-gray-900 mb-2">Posts</h1>
+        <header className="mb-5 flex justify-between items-center">
+          <h1 className="text-5xl font-bold text-gray-900 dark:text-white mb-2">
+            Posts
+          </h1>
+          <ThemeToggle />
         </header>
         <div className="mb-8">
           <SearchBar
             inputType="number"
-            placeholder="Filtra posts por numero de autor..."
+            placeholder="Filter by author number..."
             onChange={(value) => setFilter(value)}
           />
         </div>

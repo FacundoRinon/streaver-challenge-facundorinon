@@ -18,13 +18,13 @@ export default function PostDetailPage() {
   );
 
   return (
-    <main className="min-h-screen bg-gray-50 flex items-center justify-center px-4">
-      <article className="w-full min-h-[75vh] max-w-3xl bg-white rounded-xl border border-gray-200 shadow-sm px-8 py-10">
+    <main className="min-h-screen flex items-center justify-center px-4">
+      <article className="w-full min-h-[75vh] max-w-3xl bg-white dark:bg-zinc-900 rounded-xl border border-gray-200 dark:border-gray-700 shadow-sm px-8 py-10">
         <Link
           href="/posts"
-          className="inline-flex items-center text-sm text-gray-500 hover:text-gray-700 mb-4"
+          className="inline-flex items-center text-sm text-gray-500 dark:text-white hover:text-gray-700 mb-4 dark:hover:text-gray-300"
         >
-          <HiArrowLeft className="mr-1" size={30} /> Volver a Posts
+          <HiArrowLeft className="mr-1" size={30} /> Back to Posts
         </Link>
 
         {isLoading && (
@@ -41,19 +41,19 @@ export default function PostDetailPage() {
 
         {data && !isLoading && !error && (
           <>
-            <h1 className="text-3xl font-bold text-gray-900 leading-tight">
+            <h1 className="text-3xl font-bold text-gray-900 leading-tight dark:text-white">
               {data.title}
             </h1>
 
             <div className="my-4">
-              <span className="inline-block text-sm text-gray-500">
+              <span className="inline-block text-sm text-gray-500 dark:text-gray-100">
                 Author #{data.userId}
               </span>
             </div>
 
-            <hr className="mb-6 border-gray-200" />
+            <hr className="mb-6 border-gray-200 dark:border-gray-700" />
 
-            <p className="text-lg text-gray-700 leading-relaxed text-justify whitespace-pre-line">
+            <p className="text-lg text-gray-700 dark:text-gray-100 leading-relaxed text-justify w-full">
               {data.body}
             </p>
           </>

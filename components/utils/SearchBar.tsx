@@ -32,7 +32,7 @@ export default function SearchBar({
       placeholder={placeholder}
       value={value}
       onChange={(e) => setValue(e.target.value)}
-      className="border p-3 rounded w-full rounded-full"
+      className="border-3 border-gray-200 dark:border-gray-700 outline-none ring-0 focus:border-gray-300 focus:dark:border-gray-800 text-black dark:text-white p-3 rounded w-full rounded-full"
     />
   );
 }

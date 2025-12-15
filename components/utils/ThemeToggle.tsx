@@ -11,7 +11,7 @@ export default function ThemeToggle() {
       onClick={toggleTheme}
       className="
         p-2 rounded-lg
-        border-3 bg-white dark:bg-zinc-900 border-gray-200 dark:border-gray-700
+        border-2 bg-white dark:bg-zinc-900 border-gray-200 dark:border-gray-700
         text-gray-700 dark:text-gray-200
         hover:opacity-80 transition
         cursor-pointer

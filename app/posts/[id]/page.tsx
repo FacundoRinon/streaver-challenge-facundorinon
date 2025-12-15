@@ -38,7 +38,7 @@ export default function PostDetailPage() {
   return (
     <main className="min-h-screen flex items-center justify-center px-4">
       <article className="w-full min-h-[75vh] max-h-[80vh] overflow-y-auto max-w-3xl bg-white dark:bg-zinc-900 rounded-xl border border-gray-200 dark:border-gray-700 shadow-sm px-8 py-10">
-        <div className="flex justify-between items-center">
+        <div className="flex justify-between items-center mb-3">
           <Link
             href="/posts"
             className="inline-flex items-center text-sm text-gray-500 dark:text-white hover:text-gray-700 dark:hover:text-gray-300"

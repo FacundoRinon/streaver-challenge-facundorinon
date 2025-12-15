@@ -2,6 +2,10 @@
 
 - The first assumption was that both the frontend and backend were expected to coexist within the same Next.js project, taking advantage of the framework’s capabilities.
 
+- I assume that the application should initialize on the `/posts` page; therefore, the `/` route only redirects to the posts page.
+
+- I ran tests using SWR to ensure that the site re-executed requests once the internet connection was restored, using the browser dev tools. With them, I forced the disconnection through the Network tab.
+
 - From a design perspective, I decided to display posts as smaller cards on the main listing page. Each card allows navigation to a detail page where the full post can be read.
 
 - From an architectural standpoint, I opted to use a simple and modular one, while allowing for simulated scalability by creating post-related folders inside app/api, components, and lib. This decision aims to keep responsibilities clear without adding unnecessary complexity.
@@ -10,9 +14,15 @@
 
 - In the lib/posts/api.ts file, I left a line with `setTimeout` commented out in order to simulate slow network conditions and facilitate testing of the optional Step 5 functionality.
 
+- Lastly, I found it appropriate to implement a context to allow reading in dark mode. Personally, I find it more comfortable, and that is why I considered it appropriate to add this functionality.
+
 # Suposiciones
 
 - Lo primero que asumí fue que se esperaba que tanto el frontend como el backend debían convivir dentro del mismo proyecto Next.js, aprovechando así las capacidades del framework.
+
+- Asumo que la aplicacion se debe inicializar en la pagina `/posts`, es por esto que la ruta `/` solo redirige a la pagina de posts.
+
+- Realice pruebas con SWR para asegurarme que el sitio volvia a realizar las peticiones una vez que se volvia a contar con conexion a internet utilizando las dev tools. Con ellas force la desconexion en la pestaña de Network.
 
 - A nivel de diseño, tomé la decisión de mostrar los posteos en tarjetas más pequeñas dentro de la página principal del listado. Cada tarjeta permite navegar a una página de detalle donde se puede leer el post completo.
 
@@ -21,3 +31,5 @@
 - Consideré la posibilidad de crear una estructura más robusta basada en repositorios, implementaciones de repositorios y casos de uso. Sin embargo, dado el alcance del desafío, opté por mantener la solución simple, practica y alineada con lo solicitado.
 
 - En el archivo lib/posts/api.ts, mantuve comentada una línea con `setTimeout` para que sea posible simular condiciones de red lenta y facilitar la prueba de la funcionalidad opcional del Step 5 del desafío.
+
+- Por ultimo, me parecio apropiado implementar un contexto para tener la posibilidad de leer en modo oscuro. En lo personal me queda mas comodo y por eso me parecio apropiado agregar esa funcionalidad.

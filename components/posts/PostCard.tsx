@@ -1,5 +1,7 @@
 import Link from "next/link";
+
 import { Post } from "@/models/Post";
+import { capitalizeFirstLetter } from "@/lib/strings";
 
 interface PostCardProps {
   post: Post;
@@ -37,7 +39,7 @@ export default function PostCard({ post }: PostCardProps) {
         dark:text-white
       "
         >
-          {post.title}
+          {capitalizeFirstLetter(post.title)}
         </h2>
 
         <div className="text-xs text-gray-500 dark:text-gray-100">
@@ -58,7 +60,7 @@ export default function PostCard({ post }: PostCardProps) {
         dark:text-gray-100
       "
         >
-          {post.body}
+          {capitalizeFirstLetter(post.body)}
         </p>
       </article>
     </Link>

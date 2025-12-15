@@ -1,8 +1,9 @@
 "use client";
 
 import useSWR from "swr";
-import { fetchPosts } from "@/lib/posts/api";
 import { useEffect, useState } from "react";
+
+import { fetchPosts } from "@/lib/posts/api";
 
 import { Post } from "@/models/Post";
 

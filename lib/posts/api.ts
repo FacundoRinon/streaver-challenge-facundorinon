@@ -15,6 +15,8 @@ export async function fetchPosts(filter?: string): Promise<Post[]> {
 }
 
 export async function fetchPostById(id: string): Promise<Post> {
+  // await new Promise((resolve) => setTimeout(resolve, 5000)); // Se puede descomentar para probar el punto 5 (conexiones lentas)
+
   const res = await fetch(`/api/posts/${id}`);
 
   if (!res.ok) {

@@ -18,7 +18,7 @@ export default function ThemeToggle() {
       "
       aria-label="Toggle theme"
     >
-      {theme === "light" ? <HiMoon size={30} /> : <HiSun size={30} />}
+      {theme === "light" ? <HiMoon size={25} /> : <HiSun size={25} />}
     </button>
   );
 }

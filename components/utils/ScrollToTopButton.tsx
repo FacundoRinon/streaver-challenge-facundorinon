@@ -40,7 +40,7 @@ const ScrollToTopButton = () => {
         }
       `}
     >
-      <HiArrowUp size={30} />
+      <HiArrowUp size={25} />
     </button>
   );
 };

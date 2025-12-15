@@ -60,7 +60,7 @@ export default function PostsPage() {
           />
         </div>
 
-        <section className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 min-h-[300px]">
+        <section className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5 md:gap-3 min-h-[300px]">
           {error && (
             <div className="min-h-screen flex items-center justify-center text-red-500">
               Error al cargar los posts
